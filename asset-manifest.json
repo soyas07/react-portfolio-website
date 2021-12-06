@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/react-portfolio-website/static/css/main.c834908f.chunk.css",
+    "main.js": "/react-portfolio-website/static/js/main.f9dca239.chunk.js",
+    "main.js.map": "/react-portfolio-website/static/js/main.f9dca239.chunk.js.map",
+    "runtime-main.js": "/react-portfolio-website/static/js/runtime-main.35dd416b.js",
+    "runtime-main.js.map": "/react-portfolio-website/static/js/runtime-main.35dd416b.js.map",
+    "static/js/2.b0d36eda.chunk.js": "/react-portfolio-website/static/js/2.b0d36eda.chunk.js",
+    "static/js/2.b0d36eda.chunk.js.map": "/react-portfolio-website/static/js/2.b0d36eda.chunk.js.map",
+    "static/js/3.149b4e77.chunk.js": "/react-portfolio-website/static/js/3.149b4e77.chunk.js",
+    "static/js/3.149b4e77.chunk.js.map": "/react-portfolio-website/static/js/3.149b4e77.chunk.js.map",
+    "index.html": "/react-portfolio-website/index.html",
+    "static/css/main.c834908f.chunk.css.map": "/react-portfolio-website/static/css/main.c834908f.chunk.css.map",
+    "static/js/2.b0d36eda.chunk.js.LICENSE.txt": "/react-portfolio-website/static/js/2.b0d36eda.chunk.js.LICENSE.txt",
+    "static/media/about_me.f53e918a.png": "/react-portfolio-website/static/media/about_me.f53e918a.png",
+    "static/media/john-kelly.cee388f6.png": "/react-portfolio-website/static/media/john-kelly.cee388f6.png",
+    "static/media/katy-pery.93c29cb6.png": "/react-portfolio-website/static/media/katy-pery.93c29cb6.png",
+    "static/media/kylie-smith.577e3c09.png": "/react-portfolio-website/static/media/kylie-smith.577e3c09.png",
+    "static/media/person.ce97a2e1.png": "/react-portfolio-website/static/media/person.ce97a2e1.png",
+    "static/media/port-1.c3eb2f96.png": "/react-portfolio-website/static/media/port-1.c3eb2f96.png",
+    "static/media/port-2.8b7be235.png": "/react-portfolio-website/static/media/port-2.8b7be235.png",
+    "static/media/port-3.d6ec8539.png": "/react-portfolio-website/static/media/port-3.d6ec8539.png",
+    "static/media/port-4.483c2ce7.png": "/react-portfolio-website/static/media/port-4.483c2ce7.png",
+    "static/media/port-5.a74886ef.png": "/react-portfolio-website/static/media/port-5.a74886ef.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.35dd416b.js",
+    "static/js/2.b0d36eda.chunk.js",
+    "static/css/main.c834908f.chunk.css",
+    "static/js/main.f9dca239.chunk.js"
+  ]
+}
