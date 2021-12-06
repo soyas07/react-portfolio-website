@@ -1,0 +1,24 @@
+@import './_main';
+@import './_header';
+@import './intro';
+@import './about';
+@import './portfolio';
+@import './abilities';
+@import './testinomial';
+@import './contact';
+@import './footer';
+
+// Layout 
+.wrapper-primary {
+    background: $bgPrimary;
+}
+
+.wrapper-secondary {
+    background: $bgSecondary;
+}
+
+.margin-container {
+    max-width: 1749px;
+    width: 90%;
+    margin: 0 auto;
+}

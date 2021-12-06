@@ -1,0 +1,18 @@
+.about-wrapper {
+    @include flex-container(align-items, row);
+    height: 70vh;
+    .left-content {
+        h3 {
+            font-size: $primaryFontSize;
+        }
+
+        p {
+            line-height: 3.53rem;
+            padding: 2.2em 0;
+        }
+    }
+
+    .right-content {
+        display: none;
+    }
+}

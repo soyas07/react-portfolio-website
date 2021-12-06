@@ -1,0 +1,30 @@
+.portfolio-wrapper {
+    height: 70vh;
+    @include flex-container(align-items, row, center);
+}
+
+aside {
+
+    h5 {
+        font-size: $secondaryFontSize;
+        font-weight: 400;
+        padding: .5em 0;
+    }
+
+    ul {
+        @include flex-container(justify-content, row, space-between);
+        margin-right: auto;
+        width: 67%;
+
+        li {
+            font-size: $navBFontSize;
+            a:hover,
+            .active {
+                color: $secondaryColor;
+            }
+        }
+        
+    }
+}
+
+

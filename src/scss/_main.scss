@@ -1,0 +1,140 @@
+@import './variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $mainFontFamily;
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: $primaryColor;
+}
+
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: $bodyFontSize;
+}
+
+button {
+    width: 17.4375rem;
+    height: 6rem;
+    border-radius: 60px;
+    font-family: $btnFontFamily;
+    font-size: 1.875rem;
+    background: none;
+    border: 1px solid $primaryColor;
+    color: $primaryColor;
+    transition: background 300ms ease-in-out, border 200ms ease-out;
+}
+
+button:hover {
+    background: $secondaryColor;
+    cursor: pointer;
+    border: none;
+}
+
+section {
+    color: $primaryColor;
+}
+
+// carousel slider style
+.slider-image {
+    .slider-item {
+        border-radius: 60px;
+        width: 100%;
+        height: 38vh;
+        padding: 0 1em;
+    }
+
+    svg {
+        margin: 0 40%;
+    }
+
+    h4 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.875rem;
+    }
+
+    p {
+        line-height: 3rem;
+        font-weight: 200;
+    }
+
+    #test-image {
+        width: 10.68em;
+        height: 10.68em;
+        margin: 0 35%;
+    }
+
+    .feedback {
+        svg {
+            height: 5em;
+        }
+        .start-invert {
+            margin-left: -2em;
+        }
+        .end-invert {
+            width: 100%;
+        }
+    }
+}
+
+// vertical line svg
+.line-svg {
+    @include flex-container(justify-content, row, center);
+    
+    svg {
+        width: 20em;
+    }
+}
+
+
+// react carousel elastic styles
+.rec-carousel-wrapper {
+    margin: 7em 0;
+}
+
+.rec.rec-arrow {
+    background: none;
+    border: 1px solid $primaryColor;
+    color: $primaryColor;
+}
+
+.rec.rec-arrow.rec-arrow-right:hover,
+.rec.rec-arrow.rec-arrow-right:focus,
+.rec.rec-arrow.rec-arrow-left:hover,
+.rec.rec-arrow.rec-arrow-left:focus {
+    background: $secondaryColor;
+    border: none;
+}
+
+.rec.rec-arrow:disabled {
+    visibility: hidden;
+}
+
+.rec.rec-dot {
+    background: white;
+}
+
+.rec.rec-dot_active {
+    background: red;
+    box-shadow: 0 0 1px 3px $secondaryColor;
+}
+
+.rec.rec-dot_active:focus {
+    box-shadow: 0 0 1px 3px $secondaryColor;
+}

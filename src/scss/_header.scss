@@ -1,0 +1,118 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10vh;
+    z-index: 1;
+}
+
+nav {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1.7em;
+        .logo {
+            cursor: pointer;
+            svg {
+                height: 51px;
+                width: 101px;
+            }
+        }
+
+        .burger-menu,
+        .cross-menu {
+            cursor: pointer;
+            transition: all 1s ease;
+        }
+
+        .burger-menu,
+        .cross-menu.active {
+            display: block;
+        }
+
+        .burger-menu.close,
+        .cross-menu {
+            
+            display: none;
+        }
+
+        .nav-hover-box {
+            display: none;
+        }
+    }
+}
+
+.menu-items{
+    @include flex-container(align-items, column);
+    justify-content: center;
+    position: fixed;
+    background: $bgPrimary;
+    height: 90vh;
+    width: 100%;
+    z-index: 20;
+    margin-top: 1.9em;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+
+    li {
+        margin: 2em auto;
+        font-size: $navBFontSize;
+    }
+
+    li a:hover {
+        color: $secondaryColor;
+    }
+
+    .nav-btn {
+        width: 10em;
+        height: 3.5em;
+        font-size: $navBFontSize;
+    }
+}
+
+.menu-items.active {
+    transform: translateX(0%);
+}
+
+// Responsive Display
+@media screen and (min-width: 500px) {
+    nav {
+        ul {
+            .logo {
+                margin-right: auto;
+                
+            }
+    
+            .nav-hover-box {
+                padding-bottom: .4em;
+            }
+    
+            .nav-hover-box:hover {
+                border-bottom: 1px solid $secondaryColor;
+            }
+            
+            li {
+                list-style: none;
+                padding: 3.5em 1.8em 2.9em 1.8em;
+                    
+                a {
+                    font-size: $navBFontSize;
+                    
+                }
+            }
+    
+            li:hover {
+                background: $secondaryColor;
+            }
+    
+            .nav-btn {
+                width: 12.625rem;
+                height: 4.5rem;
+                font-size: $navBFontSize;
+            }
+    
+        }
+    }
+} 

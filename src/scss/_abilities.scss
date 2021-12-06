@@ -1,0 +1,18 @@
+.abilities-wrapper {
+    height: 80vh;
+    @include flex-container(align-items, row, center);
+    h3 {
+        text-align: center;
+        font-size: $primaryFontSize;
+        margin-bottom: .5em;
+    }
+
+    p {
+        padding: 1.5em 0;
+        text-align: center;
+        line-height: 2.5rem;
+    }
+}
+
+
+

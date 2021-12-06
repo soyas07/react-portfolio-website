@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border-radius: 60px;
+  font-family: "Raleway", serif;
+  font-size: 1.875rem;
+  width: 17.4375rem;
+  height: 6rem;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  -webkit-transition: background 300ms ease-in-out, border 200ms ease-out;
+  transition: background 300ms ease-in-out, border 200ms ease-out;
+}
+
+button:hover {
+  background: #FF0513;
+  cursor: pointer;
+  border: none;
+}
+/*# sourceMappingURL=Main.css.map */
