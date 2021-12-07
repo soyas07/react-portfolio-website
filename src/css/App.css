@@ -210,7 +210,7 @@ nav ul .logo svg {
 
 @font-face {
   nav ul .logo svg {
-    font-family: FreestyleScript;
+    font-family: 'freestyle-script-regular';
     src: url("../assets/Freestyle Script Regular.ttf");
   }
 }
@@ -680,7 +680,7 @@ aside ul li .active {
 
 @font-face {
   .footer-container .logo svg {
-    font-family: FreestyleScript;
+    font-family: 'freestyle-script-regular';
     src: url("../assets/Freestyle Script Regular.ttf");
   }
 }
