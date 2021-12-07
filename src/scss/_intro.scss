@@ -1,6 +1,6 @@
 
 .intro-wrapper {
-    padding-top: 10vh;
+    padding-top: 14vh;
     height: 100vh;
     @include flex-container(align-items, row);
 
@@ -15,27 +15,27 @@
         display: flex;
         flex-direction: column;
         h1 {
-            font-size: 4.75rem;
+            font-size: 4.5rem;
             line-height: 5rem;
             order: 2;
         }
 
         h4 {
             order: 1;
-            font-size: 2.3rem;
+            font-size: 2rem;
             font-weight: lighter;
         }
 
         h6 {
             font-family: $btnFontFamily;
-            font-size: 2rem;
+            font-size: 1.8rem;
             order: 4;
             margin-bottom: .9em;
         }
 
         p {
             order: 3;
-            line-height: 4.5rem;
+            line-height: 4rem;
             span {
                 color: $secondaryColor;
             }

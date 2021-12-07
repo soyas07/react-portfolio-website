@@ -1,6 +1,6 @@
 .about-wrapper {
-    @include flex-container(align-items, row);
-    height: 70vh;
+    @include flex-container(align-items, row, center);
+    height: 90vh;
     .left-content {
         h3 {
             font-size: $primaryFontSize;

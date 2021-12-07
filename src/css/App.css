@@ -22,7 +22,7 @@ li {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 button {
@@ -30,7 +30,7 @@ button {
   height: 6rem;
   border-radius: 60px;
   font-family: "Raleway", serif;
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   background: none;
   border: 1px solid white;
   color: white;
@@ -48,15 +48,41 @@ section {
   color: white;
 }
 
+.slider-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .slider-image .slider-item {
-  border-radius: 60px;
+  border-radius: 40px;
   width: 100%;
   height: 38vh;
   padding: 0 1em;
 }
 
-.slider-image svg {
-  margin: 0 40%;
+.slider-image .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.slider-image .icon svg {
+  margin-bottom: 1em;
 }
 
 .slider-image h4 {
@@ -76,7 +102,10 @@ section {
 .slider-image #test-image {
   width: 10.68em;
   height: 10.68em;
-  margin: 0 35%;
+}
+
+.slider-image #test-image img {
+  width: 100%;
 }
 
 .slider-image .feedback svg {
@@ -116,6 +145,9 @@ section {
   background: none;
   border: 1px solid white;
   color: white;
+  height: 50px;
+  min-width: none;
+  line-height: normal;
 }
 
 .rec.rec-arrow.rec-arrow-right:hover,
@@ -150,7 +182,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 10vh;
+  height: 13vh;
   z-index: 1;
 }
 
@@ -213,10 +245,9 @@ nav ul .nav-hover-box {
           justify-content: center;
   position: fixed;
   background: #0E0C38;
-  height: 90vh;
+  height: 95vh;
   width: 100%;
   z-index: 20;
-  margin-top: 1.9em;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: all 0.5s ease-in-out;
@@ -225,7 +256,7 @@ nav ul .nav-hover-box {
 
 .menu-items li {
   margin: 2em auto;
-  font-size: 1.375rem;
+  font-size: 1.5rem;
 }
 
 .menu-items li a:hover {
@@ -235,7 +266,7 @@ nav ul .nav-hover-box {
 .menu-items .nav-btn {
   width: 10em;
   height: 3.5em;
-  font-size: 1.375rem;
+  font-size: 1.5rem;
 }
 
 .menu-items.active {
@@ -258,7 +289,7 @@ nav ul .nav-hover-box {
     padding: 3.5em 1.8em 2.9em 1.8em;
   }
   nav ul li a {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
   nav ul li:hover {
     background: #FF0513;
@@ -266,12 +297,12 @@ nav ul .nav-hover-box {
   nav ul .nav-btn {
     width: 12.625rem;
     height: 4.5rem;
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 
 .intro-wrapper {
-  padding-top: 10vh;
+  padding-top: 14vh;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,7 +335,7 @@ nav ul .nav-hover-box {
 }
 
 .intro-wrapper .left-content h1 {
-  font-size: 4.75rem;
+  font-size: 4.5rem;
   line-height: 5rem;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -315,13 +346,13 @@ nav ul .nav-hover-box {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-weight: lighter;
 }
 
 .intro-wrapper .left-content h6 {
   font-family: "Raleway", serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4;
@@ -332,7 +363,7 @@ nav ul .nav-hover-box {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
-  line-height: 4.5rem;
+  line-height: 4rem;
 }
 
 .intro-wrapper .left-content p span {
@@ -374,11 +405,11 @@ nav ul .nav-hover-box {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 70vh;
+  height: 90vh;
 }
 
 .about-wrapper .left-content h3 {
-  font-size: 3.75rem;
+  font-size: 2.55rem;
 }
 
 .about-wrapper .left-content p {
@@ -391,7 +422,7 @@ nav ul .nav-hover-box {
 }
 
 .portfolio-wrapper {
-  height: 70vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,7 +436,7 @@ nav ul .nav-hover-box {
 }
 
 aside h5 {
-  font-size: 3.125rem;
+  font-size: 2rem;
   font-weight: 400;
   padding: .5em 0;
 }
@@ -422,11 +453,11 @@ aside ul {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-right: auto;
-  width: 67%;
+  width: 100%;
 }
 
 aside ul li {
-  font-size: 1.375rem;
+  font-size: 1.5rem;
 }
 
 aside ul li a:hover,
@@ -435,7 +466,7 @@ aside ul li .active {
 }
 
 .abilities-wrapper {
-  height: 80vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,7 +481,7 @@ aside ul li .active {
 
 .abilities-wrapper h3 {
   text-align: center;
-  font-size: 3.75rem;
+  font-size: 2.55rem;
   margin-bottom: .5em;
 }
 
@@ -461,12 +492,22 @@ aside ul li .active {
 }
 
 .testinomial-wrapper {
-  height: 100vh;
+  height: 160vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .title {
   text-align: center;
-  font-size: 3.75rem;
+  font-size: 2.55rem;
   margin-bottom: .5em;
 }
 
@@ -477,7 +518,7 @@ aside ul li .active {
 }
 
 .contact-wrapper {
-  height: 130vh;
+  height: 170vh;
 }
 
 .contact-container {
@@ -511,7 +552,7 @@ aside ul li .active {
 
 .contact-container h3 {
   text-align: center;
-  font-size: 3.75rem;
+  font-size: 2.55rem;
   margin: .5em 0;
 }
 
@@ -613,8 +654,21 @@ aside ul li .active {
   margin: 0 auto;
 }
 
+.footer-container .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .footer-container .logo svg {
-  width: 15em;
+  width: 10em;
 }
 
 .footer-container ul {
@@ -632,7 +686,7 @@ aside ul li .active {
 }
 
 .footer-container ul li {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   margin: 0 .5em;
 }

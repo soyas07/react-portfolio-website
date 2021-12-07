@@ -1,5 +1,5 @@
 .portfolio-wrapper {
-    height: 70vh;
+    height: 80vh;
     @include flex-container(align-items, row, center);
 }
 
@@ -14,7 +14,7 @@ aside {
     ul {
         @include flex-container(justify-content, row, space-between);
         margin-right: auto;
-        width: 67%;
+        width: 100%;
 
         li {
             font-size: $navBFontSize;

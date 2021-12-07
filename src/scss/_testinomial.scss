@@ -1,5 +1,6 @@
 .testinomial-wrapper {
-    height: 100vh;
+    height: 160vh;
+    @include flex-container(align-items, row);
 }
 
 .title {

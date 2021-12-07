@@ -17,8 +17,9 @@
     margin: 0 auto;
 
     .logo {
+        @include flex-container(justify-content, row);
         svg {
-            width: 15em;
+            width: 10em;
         }
     }
 
