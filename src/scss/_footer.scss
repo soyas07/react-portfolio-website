@@ -20,7 +20,10 @@
         @include flex-container(justify-content, row);
         svg {
             width: 10em;
-            font-family: 'freestyle-script-regular', sans-serif;
+            @font-face {
+                font-family: FreestyleScript;
+                src: url('../assets/Freestyle\ Script\ Regular.ttf');
+            }
         }
     }
 

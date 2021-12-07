@@ -18,6 +18,10 @@ nav {
             svg {
                 height: 51px;
                 width: 101px;
+                @font-face {
+                    font-family: FreestyleScript;
+                    src: url('../assets/Freestyle\ Script\ Regular.ttf');
+                }
             }
         }
 

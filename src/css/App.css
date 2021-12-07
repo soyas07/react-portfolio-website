@@ -208,6 +208,13 @@ nav ul .logo svg {
   width: 101px;
 }
 
+@font-face {
+  nav ul .logo svg {
+    font-family: FreestyleScript;
+    src: url("../assets/Freestyle Script Regular.ttf");
+  }
+}
+
 nav ul .burger-menu,
 nav ul .cross-menu {
   cursor: pointer;
@@ -669,7 +676,13 @@ aside ul li .active {
 
 .footer-container .logo svg {
   width: 10em;
-  font-family: 'freestyle-script-regular', sans-serif;
+}
+
+@font-face {
+  .footer-container .logo svg {
+    font-family: FreestyleScript;
+    src: url("../assets/Freestyle Script Regular.ttf");
+  }
 }
 
 .footer-container ul {
