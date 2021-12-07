@@ -1,13 +1,5 @@
 .contact-wrapper {
     height: 170vh;
-}
-
-.contact-container {
-    @include flex-container(justify-content, column, center);
-    max-width: 1749px;
-    width: 80%;
-    margin: 0 auto;
-
     .vertical-svg {
         display: flex;
         justify-content: center;
@@ -16,6 +8,13 @@
             height: 10em;
         }
     }
+}
+
+.contact-container {
+    @include flex-container(align-items, column, center);
+    max-width: 1749px;
+    width: 80%;
+    margin: 0 auto;
 
     h3 {
         text-align: center;

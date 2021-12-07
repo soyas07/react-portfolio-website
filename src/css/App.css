@@ -521,13 +521,26 @@ aside ul li .active {
   height: 170vh;
 }
 
-.contact-container {
+.contact-wrapper .vertical-svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.contact-wrapper .vertical-svg svg {
+  height: 10em;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -535,19 +548,6 @@ aside ul li .active {
   max-width: 1749px;
   width: 80%;
   margin: 0 auto;
-}
-
-.contact-container .vertical-svg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.contact-container .vertical-svg svg {
-  height: 10em;
 }
 
 .contact-container h3 {
@@ -669,6 +669,7 @@ aside ul li .active {
 
 .footer-container .logo svg {
   width: 10em;
+  font-family: 'freestyle-script-regular', sans-serif;
 }
 
 .footer-container ul {
