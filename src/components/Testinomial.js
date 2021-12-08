@@ -4,7 +4,7 @@ import Carousel from 'react-elastic-carousel'
 function Testinomial( {data, breakPoint} ) {
 
     const listSlider = data.map(item => (
-        <div className="slider-image">
+        <div className="slider-image modified-margin">
             <div id="test-image">
                 <img src={item.image} alt="person" />
             </div>  
@@ -24,7 +24,7 @@ function Testinomial( {data, breakPoint} ) {
 
     return (
         <section className="wrapper-secondary testinomial-wrapper">
-           <div className="margin-container ">
+           <div className="margin-container">
                <h3 className="title">What My Client Says</h3>
                <div className="line-svg">
                     <svg xmlns="http://www.w3.org/2000/svg" width="345" height="2" viewBox="0 0 345 2">

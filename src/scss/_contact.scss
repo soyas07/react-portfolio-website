@@ -30,6 +30,7 @@
     }
 
     form {
+        width: 100%;
         @include flex-container(align-items, column, center);
         input {
             width: 100%;
@@ -76,5 +77,33 @@
             color: black;
         }
         
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+    .contact-wrapper {
+        height: 145vh;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .contact-wrapper {
+        height: 135vh;
+    }
+
+    .contact-container {
+        form {
+                @include flex-container(justify-content, row, center);
+                flex-wrap: wrap;
+                justify-content: space-between;
+                input,
+                .contact-dropdown {
+                    width: 48%;
+                }
+
+                button {
+                    margin: 0 auto;
+                }
+            }
     }
 }

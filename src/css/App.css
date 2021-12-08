@@ -64,7 +64,7 @@ section {
 .slider-image .slider-item {
   border-radius: 40px;
   width: 100%;
-  height: 38vh;
+  height: 32vh;
   padding: 0 1em;
 }
 
@@ -105,6 +105,7 @@ section {
 }
 
 .slider-image #test-image img {
+  border-radius: 100%;
   width: 100%;
 }
 
@@ -177,12 +178,21 @@ section {
           box-shadow: 0 0 1px 3px #FF0513;
 }
 
+@media screen and (min-width: 500px) {
+  .slider-image .slider-item {
+    height: 100%;
+  }
+  .modified-margin {
+    margin: 0 15%;
+  }
+}
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 nav ul {
@@ -266,7 +276,6 @@ nav ul button {
   background: #0E0C38;
   height: 95vh;
   width: 100%;
-  z-index: 20;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: all 0.5s ease-in-out;
@@ -293,16 +302,19 @@ nav ul button {
           transform: translateX(0%);
 }
 
-@media screen and (max-width: 1024px) and (min-width: 500px) {
+@media screen and (max-width: 700px) and (min-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 700px) {
   html {
     font-size: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  html {
-    font-size: 14px;
-  }
   nav ul .logo {
     margin-right: auto;
   }
@@ -345,7 +357,7 @@ nav ul button {
 }
 
 .intro-wrapper {
-  padding-top: 14vh;
+  padding-top: 18vh;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -364,6 +376,10 @@ nav ul button {
   z-index: 1;
   -webkit-transform: translate(-35%, -20%);
           transform: translate(-35%, -20%);
+}
+
+.intro-wrapper .rectangle-svg {
+  display: none;
 }
 
 .intro-container {
@@ -450,15 +466,34 @@ nav ul button {
   display: none;
 }
 
-@media screen and (min-width: 1024px) {
-  .intro-container .left-content,
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .intro-wrapper {
+    padding-top: 25vh;
+  }
+  .intro-container .left-content {
+    width: 45%;
+  }
   .intro-container .right-content {
-    width: 40%;
+    width: 50%;
   }
   .intro-container .right-content {
     display: block;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(0.47);
+            transform: scale(0.47);
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .intro-wrapper .rectangle-svg {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    -webkit-transform: translate(30%, -150%);
+            transform: translate(30%, -150%);
+  }
+  .intro-wrapper .rectangle-svg img {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
   }
 }
 
@@ -489,15 +524,18 @@ nav ul button {
   display: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
   .about-wrapper .left-content {
-    width: 45%;
+    width: 40%;
   }
   .about-wrapper .right-content {
-    width: 45%;
+    width: 50%;
     display: block;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+  }
+  .about-wrapper .right-content img {
+    width: 100%;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
 }
 
@@ -543,6 +581,24 @@ aside ul li {
 aside ul li a:hover,
 aside ul li .active {
   color: #FF0513;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+  aside ul {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .portfolio-wrapper {
+    height: 120vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  aside ul {
+    width: 50%;
+  }
 }
 
 .abilities-wrapper {
@@ -597,6 +653,12 @@ aside ul li .active {
   line-height: 2.5rem;
 }
 
+@media screen and (min-width: 500px) {
+  .testinomial-wrapper {
+    height: 130vh;
+  }
+}
+
 .contact-wrapper {
   height: 170vh;
 }
@@ -644,6 +706,7 @@ aside ul li .active {
 }
 
 .contact-container form {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -699,6 +762,42 @@ aside ul li .active {
   -webkit-box-shadow: 0 0 10px #FF0513;
           box-shadow: 0 0 10px #FF0513;
   color: black;
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .contact-wrapper {
+    height: 145vh;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .contact-wrapper {
+    height: 135vh;
+  }
+  .contact-container form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact-container form input,
+  .contact-container form .contact-dropdown {
+    width: 48%;
+  }
+  .contact-container form button {
+    margin: 0 auto;
+  }
 }
 
 .footer-wrapper {

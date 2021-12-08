@@ -17,15 +17,18 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
     .about-wrapper {
         .left-content {
-            width: 45%;
+            width: 40%;
         }
-        .right-content {
-            width: 45%;
+        .right-content {    
+            width: 50%;
             display: block;
-            transform: scale(0.5);
+            img {
+                width: 100%;
+                transform: scale(0.7);
+            }
         }
     }
 }

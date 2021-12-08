@@ -14,3 +14,9 @@
     text-align: center;
     line-height: 2.5rem;
 }
+
+@media screen and (min-width: 500px) {
+    .testinomial-wrapper {
+        height: 130vh;
+    }
+}

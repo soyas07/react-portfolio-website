@@ -1,14 +1,19 @@
 import React from 'react'
 import aboutMe from '../assets/person.png'
+import rectangle from '../assets/rectangle.png'
 
 function Intro() {
     return (
         <section className="wrapper-primary intro-wrapper ">
+            <div className="rectangle-svg">
+                <img src={rectangle} alt="rectangle" />
+            </div>
             <div className="circle-svg">
                 <svg xmlns="http://www.w3.org/2000/svg" width="263" height="253" viewBox="0 0 263 253">
                     <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="131.5" cy="126.5" rx="131.5" ry="126.5" fill="#142963" opacity="0.2"/>
                 </svg>
             </div>
+            
             <div className="margin-container intro-container">
             <div className="left-content">
                 <h1>Mark </h1>
