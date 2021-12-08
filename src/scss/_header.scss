@@ -3,7 +3,6 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    height: 13vh;
     z-index: 1;
 }
 
@@ -12,12 +11,12 @@ nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 1.7em;
+        padding: 1em 0;
         .logo {
+            @include flex-container(align-items, row);
             cursor: pointer;
             svg {
-                height: 51px;
-                width: 101px;
+                height: 7.5em;
                 @font-face {
                     font-family: 'freestyle-script-regular';
                     src: url('../assets/Freestyle\ Script\ Regular.ttf');
@@ -43,6 +42,10 @@ nav {
         }
 
         .nav-hover-box {
+            display: none;
+        }
+
+        button {
             display: none;
         }
     }
@@ -73,6 +76,7 @@ nav {
         height: 3.5em;
         font-size: $navBFontSize;
     }
+
 }
 
 .menu-items.active {
@@ -80,25 +84,45 @@ nav {
 }
 
 // Responsive Display
-@media screen and (min-width: 500px) {
+
+@media screen and (max-width: 1024px) and (min-width: 500px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+
     nav {
         ul {
             .logo {
                 margin-right: auto;
-                
+
+            }
+
+            .burger-menu,
+            .cross-menu {
+                display: none;
             }
     
             .nav-hover-box {
+                display: flex;
                 padding-bottom: .4em;
+                transition: border 200ms ease;
             }
     
             .nav-hover-box:hover {
+                margin-top: -.1em;
                 border-bottom: 1px solid $secondaryColor;
             }
             
             li {
                 list-style: none;
-                padding: 3.5em 1.8em 2.9em 1.8em;
+                padding: 3.1em 1.8em 2.7em 1.8em;
+                transition: background 200ms ease-in;
                     
                 a {
                     font-size: $navBFontSize;
@@ -114,6 +138,10 @@ nav {
                 width: 12.625rem;
                 height: 4.5rem;
                 font-size: $navBFontSize;
+            }
+
+            button {
+                display: block;
             }
     
         }

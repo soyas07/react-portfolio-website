@@ -16,3 +16,16 @@
         display: none;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .about-wrapper {
+        .left-content {
+            width: 45%;
+        }
+        .right-content {
+            width: 45%;
+            display: block;
+            transform: scale(0.5);
+        }
+    }
+}

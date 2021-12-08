@@ -37,6 +37,7 @@ function Header() {
                     <div className="nav-hover-box"><li><a href="#">About</a></li></div>
                     <div className="nav-hover-box"><li><a href="#">Portfolio</a></li></div>
                     <div className="nav-hover-box"><li><a href="#">Contact</a></li></div>
+                    <button className="nav-btn desktop">Get Started</button>
                 </ul>
             </nav>
             <div className={menuStat ? "menu-items active" : "menu-items"}>

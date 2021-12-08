@@ -9,55 +9,71 @@
         z-index: 1;
         transform: translate(-35%, -20%);
     }
-
-    .left-content {
-        z-index: 1;
-        display: flex;
-        flex-direction: column;
-        h1 {
-            font-size: 4.5rem;
-            line-height: 5rem;
-            order: 2;
-        }
-
-        h4 {
-            order: 1;
-            font-size: 2rem;
-            font-weight: lighter;
-        }
-
-        h6 {
-            font-family: $btnFontFamily;
-            font-size: 1.8rem;
-            order: 4;
-            margin-bottom: .9em;
-        }
-
-        p {
-            order: 3;
-            line-height: 4rem;
-            span {
-                color: $secondaryColor;
-            }
-        }
-
-        .social-media {
-            order: 5;
-            margin-bottom: 3em;
-            svg {
-                margin-right: .6em;
-                transform: scale(0.9);
-            }
-        }
-
-        button {
-            order: 6;
-            margin-bottom: 2em;
-        }
-    }
-
-    .right-content {
-        display: none;
-    }
 }
+    .intro-container {
+        @include flex-container(align-items, row);
+        .left-content {
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
 
+            h1 {
+                font-size: 4.5rem;
+                line-height: 5rem;
+                order: 2;
+            }
+
+            h4 {
+                order: 1;
+                font-size: 2rem;
+                font-weight: lighter;
+            }
+
+            h6 {
+                font-family: $btnFontFamily;
+                font-size: 1.8rem;
+                order: 4;
+                margin-bottom: .9em;
+            }
+
+            p {
+                order: 3;
+                line-height: 4rem;
+                span {
+                    color: $secondaryColor;
+                }
+            }
+
+            .social-media {
+                order: 5;
+                margin-bottom: 3em;
+                svg {
+                    margin-right: .6em;
+                    transform: scale(0.9);
+                }
+            }
+
+            button {
+                order: 6;
+                margin-bottom: 2em;
+            }
+        }
+
+        .right-content {
+            display: none;
+        }
+    }
+
+@media screen and (min-width: 1024px) {
+    .intro-container {
+        .left-content,
+        .right-content {
+            width: 40%;
+        }
+        .right-content {
+            display: block;
+            transform: scale(0.8);
+        }
+    }   
+
+}
