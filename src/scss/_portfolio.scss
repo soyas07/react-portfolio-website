@@ -1,5 +1,5 @@
 .portfolio-wrapper {
-    height: 80vh;
+    min-height: 40vh;
     @include flex-container(align-items, row, center);
 }
 
@@ -34,12 +34,6 @@ aside {
         ul {
             width: 60%;
         }
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
-    .portfolio-wrapper {
-        height: 120vh;
     }
 }
 

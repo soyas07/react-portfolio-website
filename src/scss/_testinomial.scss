@@ -1,5 +1,5 @@
 .testinomial-wrapper {
-    height: 160vh;
+    min-height: 100vh;
     @include flex-container(align-items, row);
 }
 
@@ -13,10 +13,4 @@
     padding: 1.5em 0;
     text-align: center;
     line-height: 2.5rem;
-}
-
-@media screen and (min-width: 500px) {
-    .testinomial-wrapper {
-        height: 130vh;
-    }
 }

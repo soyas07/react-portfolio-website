@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 function Header() {
 
@@ -8,8 +8,11 @@ function Header() {
         setmenuStat(!menuStat)
     }
 
+    // change header nav bg color when scroll
+    
+
     return (
-        <header className="wrapper-primary">
+        <header className="">
             <nav className="margin-container">
                 <ul>
                     <div className="logo">

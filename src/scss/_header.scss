@@ -6,6 +6,7 @@ header {
     z-index: 3;
 }
 
+
 nav {
     ul {
         display: flex;
@@ -17,9 +18,11 @@ nav {
             cursor: pointer;
             svg {
                 height: 7.5em;
-                @font-face {
-                    font-family: 'freestyle-script-regular';
-                    src: url('../assets/Freestyle\ Script\ Regular.ttf');
+                text {
+                    @font-face {
+                        font-family: 'freestyle-script-regular';
+                        src: url('../assets/Freestyle\ Script\ Regular.ttf');
+                    }
                 }
             }
         }
@@ -93,6 +96,12 @@ nav {
 @media screen and (max-width: 1366px) and (min-width: 700px) {
     html {
         font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    html {
+        font-size: 16px;
     }
 }
 

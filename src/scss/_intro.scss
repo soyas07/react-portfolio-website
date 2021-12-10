@@ -1,8 +1,7 @@
 
 .intro-wrapper {
-    padding-top: 18vh;
-    height: 100vh;
-    @include flex-container(align-items, row);
+    min-height: 100vh;
+    @include flex-container(align-items, row, center);
 
     .circle-svg {
         position: absolute;
@@ -16,7 +15,9 @@
 }
     .intro-container {
         @include flex-container(align-items, row);
+        
         .left-content {
+            margin-top: 4em;
             z-index: 1;
             display: flex;
             flex-direction: column;
@@ -68,29 +69,27 @@
         }
     }
 
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
-    .intro-wrapper {
-        padding-top: 25vh;
-    }
+@media screen and (min-width: 1024px) {
 
     .intro-container {
+        justify-content: space-between;
         .left-content {
             width: 45%;
         }
 
         .right-content {
-            width: 50%;
-        }
-
-        .right-content {
+            width: 40%;
             display: block;
-            transform: scale(0.47);
+            transform: scale(0.9);
+            img {
+                width: 100%;
+            }
         }
     }   
 
 }
 
-@media screen and (min-width: 1230px) {
+@media screen and (min-width: 1230px) and (max-width: 1366px) {
     .intro-wrapper {
         .rectangle-svg {
             display: block;
@@ -102,5 +101,19 @@
             }
         }
     }
+}
+
+@media screen and (min-width: 1366px) {
+    .intro-wrapper {
+        .rectangle-svg {
+            display: block;
+            position: absolute;
+            z-index: 3;
+            transform: translate(60%, -150%);
+            img {
+                transform: scale(0.6);
+            }
+        }
+    }   
 }
 

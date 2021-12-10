@@ -1,5 +1,5 @@
 .abilities-wrapper {
-    height: 100vh;
+    min-height: 70vh;
     @include flex-container(align-items, row, center);
     h3 {
         text-align: center;
