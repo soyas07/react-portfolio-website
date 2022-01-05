@@ -3,16 +3,22 @@ import React, { useState, useEffect } from 'react'
 function Header() {
 
     const [menuStat, setmenuStat] = useState(false)
+    const [navStat, setNavStat] = useState(false)
 
     const handleClick = () => {
         setmenuStat(!menuStat)
     }
 
     // change header nav bg color when scroll
-    
+    const changeNavColor = () => {
+        if(window.scrollY > 50) setNavStat(true)
+        if(window.scrollY < 50) setNavStat(false)
+    }
+
+    window.addEventListener('scroll', changeNavColor)
 
     return (
-        <header className="">
+        <header id={navStat && "active-header"}>
             <nav className="margin-container">
                 <ul>
                     <div className="logo">

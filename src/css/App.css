@@ -195,6 +195,12 @@ header {
   z-index: 3;
 }
 
+#active-header {
+  -webkit-transition: background 500ms ease;
+  transition: background 500ms ease;
+  background: #0E0C38;
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
